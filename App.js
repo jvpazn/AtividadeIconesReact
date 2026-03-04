@@ -9,13 +9,6 @@ import {
 } from "react-native";
 
 export default function App() {
-  const user1 = {
-    nome: "João ",
-    numero: "81 9 12345678",
-  };
-  const user2 = { nome: "Ishmael Talicious fish", numero: "81 9 23456678" };
-  const user3 = { nome: "Natalia Bernand Fonseca", numero: "81 9 33344455" };
-
   return (
     <View style={styles.container}>
       <View style={styles.backgroundShape} />
@@ -36,6 +29,11 @@ export default function App() {
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.TextoTopo}>Messages & chat</Text>
         <Text style={styles.UnderlineTexto}>_________________________</Text>
+          <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
+
+        <Text>Mark all read                          Sort by Time V</Text>
+                  <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
+
         <ScrollView style={{ flex: 1 }}>
           <TouchableOpacity style={styles.item}>
             <View horizontal style={styles.item}>
@@ -43,12 +41,15 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://us.123rf.com/450wm/baiajaku/baiajaku1606/baiajaku160600038/60146044-retrato-de-moda-sobre-uma-mulher-bonita-jovem-com-%C3%B3culos-de-sol.jpg?ver=6",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user1.nome}</Text>
-                  <Text style={styles.text1}>{user1.numero}</Text>
+                  <Text style={styles.text1}>Claudia Alves</Text>
+                  <Text style={styles.text1}>Do more of what you love.</Text>
+                </View>
+                <View style={{ marginLeft: 15 }}>
+                  <Text style={styles.iconeNotif}>3</Text>
                 </View>
               </View>
             </View>
@@ -60,12 +61,15 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://thumbs.dreamstime.com/b/homem-confuso-45369085.jpg",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user2.nome}</Text>
-                  <Text style={styles.text1}>{user2.numero}</Text>
+                  <Text style={styles.text1}>Dani Martinez</Text>
+                  <Text style={styles.text1}>Do your own thing.</Text>
+                </View>
+                <View style={{ marginLeft: 15 }}>
+                  <Text style={styles.iconeNotif}>1</Text>
                 </View>
               </View>
             </View>
@@ -77,12 +81,15 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeveToyhdJFc0BvMF42hxFAUjCRFC604fgdA&s",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user3.nome}</Text>
-                  <Text style={styles.text1}>{user3.numero}</Text>
+                  <Text style={styles.text1}>Kimberly Nguyen</Text>
+                  <Text style={styles.text1}>Kindness is beautiful.</Text>
+                </View>
+                <View style={{ marginLeft: 15 }}>
+                  <Text style={styles.iconeNotif}>1</Text>
                 </View>
               </View>
             </View>
@@ -95,12 +102,15 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://thumbs.dreamstime.com/b/free-happy-woman-enjoying-nature-sunset-freedom-happiness-enjoyment-concept-beautiful-multiracial-asian-caucasian-girl-34800376.jpg",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user1.nome}</Text>
-                  <Text style={styles.text1}>{user1.numero}</Text>
+                  <Text style={styles.text1}>Mariana Napolitani</Text>
+                  <Text style={styles.text1}>Live your purpose.</Text>
+                </View>
+                <View style={{ marginLeft: 15 }}>
+                  <Text style={styles.iconeNotif}>1</Text>
                 </View>
               </View>
             </View>
@@ -112,12 +122,12 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmIKj_tu2-yD8C9bE3EFSI8wSxz66JS6cGw&s",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user2.nome}</Text>
-                  <Text style={styles.text1}>{user2.numero}</Text>
+                  <Text style={styles.text1}>Olivia Wilson</Text>
+                  <Text style={styles.text1}>You got this.</Text>
                 </View>
               </View>
             </View>
@@ -129,12 +139,12 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://i.pinimg.com/750x/c5/9b/e3/c59be373a7ee7557d16398b2d9c4d358.jpg",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user3.nome}</Text>
-                  <Text style={styles.text1}>{user3.numero}</Text>
+                  <Text style={styles.text1}>Rachelle Beaudry</Text>
+                  <Text style={styles.text1}>You're wonderful.</Text>
                 </View>
               </View>
             </View>
@@ -146,51 +156,16 @@ export default function App() {
                 <Image
                   style={styles.icon}
                   source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
+                    uri: "https://i.namu.wiki/i/ZL5k89zdxg4dlH0clp8xS4JGLSTqSczNG-slACr2wTfeWNcSCQJFoo2FQz_q6jaWZypd78gnU1E33-mLhDhuSA.webp",
                   }}
                 />
                 <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user1.nome}</Text>
-                  <Text style={styles.text1}>{user1.numero}</Text>
+                  <Text style={styles.text1}>Soo Jin Ae</Text>
+                  <Text style={styles.text1}>Keep it simple.</Text>
                 </View>
               </View>
             </View>
           </TouchableOpacity>
-          <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
-          <TouchableOpacity style={styles.item}>
-            <View horizontal style={styles.item}>
-              <View style={styles.row}>
-                <Image
-                  style={styles.icon}
-                  source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
-                  }}
-                />
-                <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user2.nome}</Text>
-                  <Text style={styles.text1}>{user2.numero}</Text>
-                </View>
-              </View>
-            </View>
-          </TouchableOpacity>
-          <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
-          <TouchableOpacity style={styles.item}>
-            <View horizontal style={styles.item2}>
-              <View style={styles.row}>
-                <Image
-                  style={styles.icon}
-                  source={{
-                    uri: "https://cdn-icons-png.flaticon.com/512/1144/1144811.png",
-                  }}
-                />
-                <View style={{ marginLeft: 15 }}>
-                  <Text style={styles.text1}>{user3.nome}</Text>
-                  <Text style={styles.text1}>{user3.numero}</Text>
-                </View>
-              </View>
-            </View>
-          </TouchableOpacity>
-          <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
         </ScrollView>
         <StatusBar style="auto" />
       </ScrollView>
@@ -228,7 +203,8 @@ const styles = StyleSheet.create({
     color: "#475f9f",
   },
   item: {
-    height: 40,
+    height: 50,
+    width: 250,
     marginVertical: 5,
     backgroundColor: "#ffffff",
     borderRadius: 5,
@@ -250,6 +226,8 @@ const styles = StyleSheet.create({
   icon: {
     width: 40,
     height: 40,
+    marginLeft: 5,
+    borderRadius: 100
   },
   button: {
     height: 40,
@@ -270,4 +248,12 @@ const styles = StyleSheet.create({
   iconeEscondidor: {
     color: "#eeeeee",
   },
+  iconeNotif: {
+    fontSize: 12,
+    width: 17,
+    height: 17,
+    textAlign: "center",
+    backgroundColor: "#3F60A0",
+    borderRadius: 100
+  }
 });
