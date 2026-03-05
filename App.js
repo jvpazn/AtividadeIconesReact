@@ -29,10 +29,10 @@ export default function App() {
       <ScrollView contentContainerStyle={styles.content}>
         <Text style={styles.TextoTopo}>Messages & chat</Text>
         <Text style={styles.UnderlineTexto}>_________________________</Text>
-          <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
+        <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
 
-        <Text>Mark all read                          Sort by Time V</Text>
-                  <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
+        <Text>Mark all read Sort by Time V</Text>
+        <Text style={styles.iconeEscondidor}>AAAAAAAAAAAAA</Text>
 
         <ScrollView style={{ flex: 1 }}>
           <TouchableOpacity style={styles.item}>
@@ -167,8 +167,49 @@ export default function App() {
             </View>
           </TouchableOpacity>
         </ScrollView>
-        <StatusBar style="auto" />
       </ScrollView>
+      <View style={styles.footer}>
+        <View style={styles.footerItem}>
+          <Image
+            source={{
+              uri: "https://upload.wikimedia.org/wikipedia/commons/6/66/Home_icon_blue-1.png?20201203104446",
+            }}
+            style={styles.footerIcone}
+          />
+          <Text style={styles.footerText}>Home</Text>
+        </View>
+
+        <View style={styles.footerItem}>
+          <Image
+            source={{
+              uri: "https://cdn-icons-png.flaticon.com/512/9356/9356566.png",
+            }}
+            style={styles.footerIcone}
+          />
+          <Text style={styles.footerText}>Chat</Text>
+        </View>
+
+        <View style={styles.footerItem}>
+          <Image
+            source={{
+              uri: "https://cdn-icons-png.freepik.com/512/8295/8295013.png",
+            }}
+            style={styles.footerIcone}
+          />
+          <Text style={styles.footerText}>Mail</Text>
+        </View>
+
+        <View style={styles.footerItem}>
+          <Image
+            source={{
+              uri: "https://static.vecteezy.com/system/resources/previews/036/885/313/non_2x/blue-profile-icon-free-png.png",
+            }}
+            style={styles.footerIcone}
+          />
+          <Text style={styles.footerText}>Profile</Text>
+        </View>
+      </View>
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -227,7 +268,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     marginLeft: 5,
-    borderRadius: 100
+    borderRadius: 100,
   },
   button: {
     height: 40,
@@ -254,6 +295,29 @@ const styles = StyleSheet.create({
     height: 17,
     textAlign: "center",
     backgroundColor: "#3F60A0",
-    borderRadius: 100
-  }
+    borderRadius: 100,
+  },
+  footer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    paddingVertical: 15,
+    paddingBottom: 25,
+    borderTopWidth: 1,
+    borderColor: "#e0e0e0",
+  },
+  footerItem: {
+    alignItems: "center",
+  },
+  footerIcone: {
+    width: 24,
+    height: 24,
+    marginBottom: 5,
+  },
+  footerText: {
+    fontSize: 12,
+    color: "#4F6D9D",
+    fontWeight: "bold",
+  },
 });
